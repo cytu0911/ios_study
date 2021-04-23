@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This way up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KeR-jw-1GN">
+                                <rect key="frame" x="142" y="128" width="91" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s5Q-vu-7gp">
+                                <rect key="frame" x="164.5" y="187" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="s5Q-vu-7gp" firstAttribute="leading" secondItem="KeR-jw-1GN" secondAttribute="trailing" constant="108" id="8o0-aJ-OTp"/>
+                            <constraint firstItem="KeR-jw-1GN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="134" id="FQy-eh-T0e"/>
+                            <constraint firstItem="KeR-jw-1GN" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="108" id="OUh-tE-RXd"/>
+                            <constraint firstItem="s5Q-vu-7gp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VLP-2U-DzG"/>
+                            <constraint firstItem="s5Q-vu-7gp" firstAttribute="top" secondItem="KeR-jw-1GN" secondAttribute="bottom" constant="38" id="XXc-HX-oxc"/>
+                            <constraint firstItem="KeR-jw-1GN" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bFf-sU-9Qw"/>
+                            <constraint firstItem="KeR-jw-1GN" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="fBR-Pn-1Hr"/>
+                            <constraint firstItem="s5Q-vu-7gp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="qzR-aT-AcZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FQy-eh-T0e"/>
+                                <exclude reference="OUh-tE-RXd"/>
+                                <exclude reference="bFf-sU-9Qw"/>
+                                <exclude reference="fBR-Pn-1Hr"/>
+                                <exclude reference="8o0-aJ-OTp"/>
+                                <exclude reference="VLP-2U-DzG"/>
+                                <exclude reference="XXc-HX-oxc"/>
+                                <exclude reference="qzR-aT-AcZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <include reference="FQy-eh-T0e"/>
+                                <include reference="fBR-Pn-1Hr"/>
+                                <include reference="8o0-aJ-OTp"/>
+                                <include reference="qzR-aT-AcZ"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular">
+                            <mask key="constraints">
+                                <include reference="OUh-tE-RXd"/>
+                                <include reference="bFf-sU-9Qw"/>
+                                <include reference="VLP-2U-DzG"/>
+                                <include reference="XXc-HX-oxc"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
