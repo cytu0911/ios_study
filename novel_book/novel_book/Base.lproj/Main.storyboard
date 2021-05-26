@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="cSK-9a-d87">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--书城-->
+        <scene sceneID="4Xz-vp-r5D">
+            <objects>
+                <viewController id="2Xs-5N-7PD" customClass="ShuchengViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uI9-jJ-fuh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="0v2-FT-2eu"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="书城" image="btn_shucheng" id="RTw-Ik-ikZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tLG-N2-3yi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="-127"/>
+        </scene>
+        <!--书架-->
+        <scene sceneID="YiR-Uq-OXW">
+            <objects>
+                <viewController id="9NY-ZX-p0n" customClass="ShujiaViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ktl-Yy-Svo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="6DF-ye-Z3s"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="书架" image="btn_shujia" id="3A5-Qf-MLG"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ts0-1a-VSU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="41" y="-790"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="r0p-YK-tfz">
+            <objects>
+                <tabBarController id="cSK-9a-d87" customClass="ViewController" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="WJu-aV-tKk">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9NY-ZX-p0n" kind="relationship" relationship="viewControllers" id="rrv-an-2GT"/>
+                        <segue destination="2Xs-5N-7PD" kind="relationship" relationship="viewControllers" id="2w4-Sj-B7W"/>
+                        <segue destination="dP7-dF-ps6" kind="relationship" relationship="viewControllers" id="Hk3-b3-fEX"/>
+                        <segue destination="IdA-3W-7zx" kind="relationship" relationship="viewControllers" id="1hd-1p-AQ0"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="WG2-t3-4as" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-870" y="-551"/>
+        </scene>
+        <!--我的-->
+        <scene sceneID="bVm-5q-LfO">
+            <objects>
+                <viewController id="IdA-3W-7zx" customClass="WodeViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="meX-5t-mw5">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="sqM-iO-5ju"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="我的" image="btn_wode" id="dp2-MF-NvJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rdH-PK-1ww" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-767" y="484"/>
+        </scene>
+        <!--分类-->
+        <scene sceneID="XKK-N1-Fvo">
+            <objects>
+                <viewController id="dP7-dF-ps6" customClass="FenleiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lkc-Wf-ST8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="7L9-nN-D7r"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="分类" image="btn_fenlei" id="V3N-n1-Qhz"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2yu-8X-4Z2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-52" y="646"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="btn_fenlei" width="36" height="36"/>
+        <image name="btn_shucheng" width="36" height="42"/>
+        <image name="btn_shujia" width="36" height="39"/>
+        <image name="btn_wode" width="36" height="38"/>
+    </resources>
+</document>
